@@ -21,11 +21,11 @@
 
         default_layer {
             bindings = <
-&kp A  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
+&kp A  &kp D  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -33,11 +33,11 @@
 
         func_layer {
             bindings = <
-&kp A  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none
+&kp A  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
