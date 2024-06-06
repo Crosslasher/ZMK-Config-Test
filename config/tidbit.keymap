@@ -5,13 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 
-&encoder_1_top_row {
-    status = "okay";
-};
+&encoder_1_top_row { status = "okay"; };
 
 / {
     sensors: sensors {
@@ -25,24 +21,26 @@
 
         default_layer {
             bindings = <
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                &none &none       &none       &none       &none
+&kp A  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-         func_layer {
-             bindings = <
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                &none &none       &none       &none       &none
-             >;
+        func_layer {
+            bindings = <
+&none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+&none  &none  &none  &none
+            >;
 
-             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-         };
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
     };
 };
